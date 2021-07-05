@@ -1,0 +1,5 @@
+*.json
+config.yaml
+*session*
+.vscode/
+__pycache__/

@@ -1,0 +1,40 @@
+tags:
+  tiktok:
+    tiktok_shit1: {"flags": 1, "promoted": 0, "tags": "! s:-100 Generation Degeneration"}
+    tiktok_shit2: {"flags": 1, "promoted": 0, "tags": "! s:-100 spachtelfresse"}
+    tiktok_shit3: {"flags": 1, "promoted": 0, "tags": "! s:-100 Cringe sein Vater"}
+    tiktok_shit4: {"flags": 1, "promoted": 0, "tags": "! s:-100 fetter Hurensohn"}
+    tiktok_shit5: {"flags": 1, "promoted": 0, "tags": "! s:-100 Deutschlands Elite"}
+    tiktok_shit6: {"flags": 1, "promoted": 0, "tags": "haut einfach rein"}
+    tiktok_shit7: {"flags": 1, "promoted": 0, "tags": "! s:-100 geistige Elite"}
+    tiktok_shit8: {"flags": 1, "promoted": 0, "tags": "! s:-100 wirklich behindert"}
+    tiktok_shit9: {"flags": 1, "promoted": 0, "tags": "! s:-100 Captain Cringe"}
+    tiktok_shit10: {"flags": 1, "promoted": 0, "tags": "! s:-100 digitales Aids"}
+    tiktok_shit11: {"flags": 1, "promoted": 0, "tags": '! s:-100 TikTok'}
+    tiktok_shit12: {"flags": 1, "promoted": 0, "tags": '! s:-100 Ü40 WhatsApp Gruppe'}
+    tiktok_shit13: {"flags": 1, "promoted": 0, "tags": '! s:-100 Gendefekt im Kopf'}
+    tiktok_shit14: {"flags": 1, "promoted": 0, "tags": '! s:-100 1 A Hurensohn'}
+    tiktok_shit15: {"flags": 1, "promoted": 0, "tags": '! s:-100 Tik Tok'}
+    tiktok_shit16: {"flags": 1, "promoted": 0, "tags": '! s:-100 Lebenszeitverschwendung'}
+    tiktok_shit17: {"flags": 1, "promoted": 0, "tags": '! s:-100 tiktok'}
+    tiktok_shit18: {"flags": 1, "promoted": 0, "tags": '! s:-100 Assibratze'}
+    tiktok_shit19: {"flags": 1, "promoted": 0, "tags": '! s:-100 Cringe'}
+  katze:
+    kadse: {"flags": 1, "promoted": 1, "tags": "kadse schmuser"}
+    kadse1: {"flags": 1, "promoted": 1, "tags": "kadse awwpload"}
+  hund:
+    bellkadse: {"flags": 1, "promoted": 1, "tags": "bellkadse awwpload"} 
+    bellkadse1: {"flags": 1, "promoted": 1, "tags": "Hund"}
+    bellkadse2: {"flags": 1, "promoted": 1, "tags": "Wuffer"}
+    bellkadse3: {"flags": 1, "promoted": 1, "tags": 'B100'}
+    bellkadse4: {"flags": 1, "promoted": 1, "tags": "Behundert"}
+  meme:
+    kadse2: {"flags": 1, "promoted": 1, "tags": "Informatikerhumor"}
+    kadse3: {"flags": 1, "promoted": 1, "tags": "! meme"} 
+    
+core:
+  mongodb_url: "mongodb+srv://xxx"
+  token: "YOUR_BOT_TOKEN"
+  api_id: "YOUR_API_ID"
+  api_hash: "YOUR_API_HASH"
+  channel: "YOUR_CHANNEL_ID"
