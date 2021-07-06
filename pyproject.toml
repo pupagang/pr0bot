@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pr0_bot"
+version = "0.1.0"
+description = ""
+authors = ["billaids <jimmy.nelle@hsw-stud.de>"]
+license = "WTFPL"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.7.4"
+motor = "^2.4.0"
+Pyrogram = "^1.2.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
