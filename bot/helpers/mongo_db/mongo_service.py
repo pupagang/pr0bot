@@ -6,7 +6,7 @@ class DbService:
         self.__DB = db
 
     async def add_posts(self, posts: dict) -> None:
-        tmp_dict = {"_id": posts["id"], "id": posts["id"]}
+        tmp_dict = {"_id": posts["id"]}
         await self.__DB.insert_one(tmp_dict)
 
     async def check_post(self, id: int) -> None:
