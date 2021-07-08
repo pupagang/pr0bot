@@ -1,4 +1,3 @@
-from pr0gramm import *
 from motor import motor_asyncio
 from pyrogram import Client
 
