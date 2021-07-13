@@ -13,12 +13,12 @@ sched = AsyncIOScheduler(daemon=True)
 
 async def main():
     for x in config["tags"].keys():
-        await process_posts(yaml_config=config["tags"][x],
-                            chat_id=config["core"]["channel"],
-                            mongo=db)
-    await process_posts(chat_id=config["core"]["goreguy"],
-                        yaml_config=config["Gore"],
-                        mongo=db_gore)
+        await process_posts(
+            yaml_config=config["tags"][x], chat_id=config["core"]["channel"], mongo=db
+        )
+    await process_posts(
+        chat_id=config["core"]["goreguy"], yaml_config=config["Gore"], mongo=db_gore
+    )
 
 
 async def send_video_post(video: str or BinaryIO, caption: str, chat_id: str) -> None:
@@ -42,19 +42,25 @@ async def process_posts(yaml_config: dict, chat_id: str, mongo: motor_asyncio) -
                     tag = await pr0.get_tags(z["id"])
                     if not z["source"] and z["image"].endswith(".mp4"):
                         await send_video_post(
-                            video=f'https://vid.pr0gramm.com/{z["image"]}', caption=tag, chat_id=chat_id
+                            video=f'https://vid.pr0gramm.com/{z["image"]}',
+                            caption=tag,
+                            chat_id=chat_id,
                         )
                         await mongo.add_posts(z)
                         await asyncio.sleep(5)
 
                     elif z["source"].endswith(".mp4"):
-                        await send_video_post(video=z["source"], caption=tag, chat_id=chat_id)
+                        await send_video_post(
+                            video=z["source"], caption=tag, chat_id=chat_id
+                        )
                         await mongo.add_posts(z)
                         await asyncio.sleep(5)
 
                     elif z["image"].endswith(".jpg") or z["image"].endswith(".png"):
                         await send_photo_post(
-                            photo=f'https://img.pr0gramm.com/{z["image"]}', caption=tag, chat_id=chat_id
+                            photo=f'https://img.pr0gramm.com/{z["image"]}',
+                            caption=tag,
+                            chat_id=chat_id,
                         )
                         await mongo.add_posts(z)
                         await asyncio.sleep(5)
