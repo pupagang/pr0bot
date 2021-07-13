@@ -16,4 +16,5 @@ api_hash = config["core"]["api_hash"]
 
 pr0 = Pr0Items(cookies)
 db = DbService(motor.posts)
+db_gore = DbService(motor.gore)
 app = Client("pr0", bot_token=token, api_id=api_id, api_hash=api_hash)
