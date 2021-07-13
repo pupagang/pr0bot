@@ -1,4 +1,3 @@
-from typing import BinaryIO
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from motor import motor_asyncio
 
@@ -21,11 +20,11 @@ async def main():
     )
 
 
-async def send_video_post(video: str or BinaryIO, caption: str, chat_id: str) -> None:
+async def send_video_post(video: str, caption: str, chat_id: str) -> None:
     await app.send_video(chat_id=chat_id, video=video, caption=f"#{caption}")
 
 
-async def send_photo_post(photo: str or BinaryIO, caption: str, chat_id: str) -> None:
+async def send_photo_post(photo: str, caption: str, chat_id: str) -> None:
     await app.send_photo(chat_id=chat_id, photo=photo, caption=f"#{caption}")
 
 

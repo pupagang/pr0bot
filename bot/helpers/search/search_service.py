@@ -19,7 +19,7 @@ class Pr0Items:
         async with self.__http.get(self.__API_URL, params=params) as resp:
             return await resp.json()
 
-    async def get_tags(self, id: str or int) -> json:
+    async def get_tags(self, id: int) -> json:
         async with self.__http.get(self.__API_URL_INFO, params={"itemId": id}) as resp:
             response = await resp.json()
             for x in response["tags"]:
